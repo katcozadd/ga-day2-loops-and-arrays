@@ -51,7 +51,7 @@ for ( i = 1; i <= 100; i++) {
 
 	}
 }
-*/
+
 
 //Getting to Know You
 //1. Matt H. decides that Thom. can't be named "Thom" anymore. Remove "Thom" from the thom array and replace it with "Gameboy".
@@ -74,6 +74,17 @@ console.log(matt);
 //4. Remove "Pittsburgh" from Kristyn's array and add "Brooklyn".
 kristyn[2] = "Brooklyn";
 console.log(kristyn);
+*/
+//Yell at the Ninja Turtles
+//1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+
+//2. Use a for loop to call toUpperCase() on each of them and print out the result.
+for (let i = 0; i < ninjaTurtles.length; i++) {
+		let newNinja = ninjaTurtles[i].toUpperCase();
+			console.log(newNinja);
+}
+
 
 
 
