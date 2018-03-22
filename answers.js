@@ -74,7 +74,8 @@ console.log(matt);
 //4. Remove "Pittsburgh" from Kristyn's array and add "Brooklyn".
 kristyn[2] = "Brooklyn";
 console.log(kristyn);
-*/
+
+
 //Yell at the Ninja Turtles
 //1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
@@ -85,6 +86,63 @@ for (let i = 0; i < ninjaTurtles.length; i++) {
 			console.log(newNinja);
 }
 
+*/
+//Return of the Closets
+//1. Alien Attire - Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+kristynsCloset.shift();
+console.log(kristynsCloset);
+
+let kristynsShoe = "left shoe";
+thomsCloset.push(kristynsShoe);
+console.log(thomsCloset);
+
+//2. Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+//Kristyn Outfit 1
+console.log("Today, Kristyn will be wearing " + kristynsCloset[1] + " with her " + kristynsCloset[3] + " and " + kristynsCloset[4] + ". That gal has some serious style!");
+//Kristyn Outfit 2
+console.log("Today, Kristyn will be wearing a " + kristynsCloset[0] + " with her " + kristynsCloset[5] + " and a " + kristynsCloset[2] + ". That gal has some serious style!");
+//Kristyn Outfit 3
+console.log("Today, Kristyn will be wearing a " + kristynsCloset[3] + " with some " + kristynsCloset[6] + " in hand and a " + kristynsCloset[5] + " upon her head. That gal has some serious style!");
+
+//Thom Outfit 1
+console.log("Today, Thom will be wearing a " + thomsCloset[0][0] + " with his " + thomsCloset[1][0] + " and " + thomsCloset[2][0] + ". Damn, he is kinda fly for a white guy!");
+//Thom Outfit 2
+console.log("Today, Thom will be wearing a " + thomsCloset[0][1] + " with his " + thomsCloset[1][1] + " and a " + thomsCloset[2][1] + ". Damn, he is kinda fly for a white guy!");
+//Thom Outfit 3
+console.log("Today, Thom will be wearing a " + thomsCloset[0][2] + " with his " + thomsCloset[1][2] + " and " + thomsCloset[2][2] + ". Damn, he is kinda fly for a white guy!");
 
 
 
