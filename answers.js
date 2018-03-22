@@ -86,7 +86,7 @@ for (let i = 0; i < ninjaTurtles.length; i++) {
 			console.log(newNinja);
 }
 
-*/
+
 //Return of the Closets
 //1. Alien Attire - Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
 
@@ -158,8 +158,15 @@ console.log(thomsCloset[0]);
 console.log(thomsCloset[1]);
 console.log(thomsCloset[2]);
 
+*/
 
-
+//Multiples of 3 and 5
+let sum = 0;
+for (let i = 0; i < 1000; i++) {
+	if (i % 3 === 0 || i % 5 === 0);
+		sum = sum + i;
+		console.log(sum);
+}
 
 
 
